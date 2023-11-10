@@ -1,48 +1,43 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Equipo {
 	private String paisEquipo;
 	private List<Atleta> atletas;
 	private Disciplina disciplinaEquipo;
-	private Atleta atleta;
-
-	public void agregarAtleta(Atleta atleta) {
-		throw new UnsupportedOperationException();
-	}
-
-	public void eliminarAtleta(Atleta atleta) {
-		throw new UnsupportedOperationException();
-	}
-
-	public String toString() {
-		throw new UnsupportedOperationException();
-	}
 
 	public String getPaisEquipo() {
 		return this.paisEquipo;
 	}
-
 	public void setPaisEquipo(String paisEquipo) {
 		this.paisEquipo = paisEquipo;
 	}
-
 	public List<Atleta> getAtletas() {
-		throw new UnsupportedOperationException();
+		return this.atletas;
 	}
-
 	public void setAtletas(List<Atleta> atletas) {
-		throw new UnsupportedOperationException();
+		this.atletas = atletas;
 	}
-
 	public Disciplina getDisciplinaEquipo() {
 		return this.disciplinaEquipo;
 	}
-
 	public void setDisciplinaEquipo(Disciplina disciplinaEquipo) {
 		this.disciplinaEquipo = disciplinaEquipo;
 	}
 
+	public void agregarAtleta(Atleta atleta) {
+		atletas.add(atleta);
+	}
+	public void eliminarAtleta(Atleta atleta) {
+		atletas.remove(atleta);
+	}
+	public String toString() {
+		return "Pais del equipo: " + paisEquipo+ "Disciplina: " + disciplinaEquipo + "Los atletas que conforman el equipo: " +atletas;
+	}
+
 	public Equipo(String paisEquipo, Disciplina disciplinaEquipo) {
-		throw new UnsupportedOperationException();
+		this.paisEquipo = paisEquipo;
+		this.disciplinaEquipo = disciplinaEquipo;
+		this.atletas = new ArrayList<>();
 	}
 }
