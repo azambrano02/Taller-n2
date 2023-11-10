@@ -4,7 +4,7 @@ import java.util.List;
 public class Equipo {
 	private String paisEquipo;
 	private List<Atleta> atletas;
-	private Disciplina disciplinaEquipo;
+	private String disciplinaEquipo;
 
 	public String getPaisEquipo() {
 		return this.paisEquipo;
@@ -35,7 +35,7 @@ public class Equipo {
 		return "Pais del equipo: " + paisEquipo+ "Disciplina: " + disciplinaEquipo + "Los atletas que conforman el equipo: " +atletas;
 	}
 
-	public Equipo(String paisEquipo, Disciplina disciplinaEquipo) {
+	public Equipo(String paisEquipo, String disciplinaEquipo) {
 		this.paisEquipo = paisEquipo;
 		this.disciplinaEquipo = disciplinaEquipo;
 		this.atletas = new ArrayList<>();
