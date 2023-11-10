@@ -39,10 +39,6 @@ public class Evento {
 	public void eliminarAtleta(Atleta atleta) {
 		atletas.remove(atleta);
 	}
-
-	public void agregarEquipo(Equipo equipo){
-		equipos.add(equipo);
-	}
 	public String toString() {
 		return "Disciplina: " +disciplina+ "Equipos: " + equipos+ "La fecha del evento sera: " + fecha;
 	}
