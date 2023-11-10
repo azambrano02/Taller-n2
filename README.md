@@ -1,5 +1,5 @@
 # Taller n°2: Juegos Panamericanos
-primero para ordenarme bien identifique los atributos de cada clase que tenia que crear y luego sus metodos, para luego crear el diagrama UML. 
+Primero para ordenarme bien identifique los atributos de cada clase que tenia que crear y luego sus metodos, para luego crear el diagrama UML. 
 Despues de tener cada clase con sus atributos y metodos identifique las relaciones que tenian estas para poder finalizar el diagrama y pasarlo
 a codigo en Intellij.
 
